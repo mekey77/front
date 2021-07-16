@@ -14,11 +14,17 @@
     <script>
         $(function(){
             $("#btn").click(function(){
-               $("#box").stop().animate({
+               /*
+                $("#box").stop().animate({
                     "left":"500px"
-               },1000,function(){
-                $("#box").fadeOut();
-               });
+               },1000);
+               $("#box").fadeOut();
+               */
+                $("#box").stop().animate({
+                    "left":"500px"
+               },1000.function(){   //애니메이션 적용 후 그 다음 적용되는 함수
+                    $("#box").fadeOut();
+                }
             });
         });
     </script>
